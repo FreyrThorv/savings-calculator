@@ -1,32 +1,91 @@
-.App {
-  text-align: center;
+
+/*
+ General
+*/
+
+body {
+  background-color: #f9f9f9;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+h1, h2, h3, b {
+  font-family: 'Space Mono', monospace;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+p, a, li, input {
+  font-size: 16px;
 }
 
-.App-link {
-  color: #61dafb;
+a:visited {
+  color: #000000;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*
+  Inputs. 
+*/
+
+.app-container input {
+  width: 100%;
+  padding: 10px 10px;
+}
+
+input:read-only { 
+  background-color: #f9f9f9;
+  cursor: not-allowed;
+
+}
+
+/*
+  Misc 
+*/
+
+.accent-block {
+  color: green;
+}
+
+.saving {
+  color: green;
+}
+
+.spending {
+  color: red;
+}
+
+/*
+  Margin helpers. 
+*/
+
+
+.margin-top-10 {
+  margin-top: 10px;
+}
+
+.margin-top-20 {
+  margin-top: 20px;
+}
+
+.margin-top-40 {
+  margin-top: 40px;
+}
+
+.margin-bottom-15 {
+  margin-bottom: 10px;
+}
+
+.margin-bottom-20 {
+  margin-bottom: 20px; 
+}
+
+.margin-bottom-40 {
+  margin-bottom: 40px;
+}
+/*
+  Other helpers
+*/
+
+.hide {
+  display: none;
+}
+
+.to-uppercase {
+  text-transform: uppercase;
 }
