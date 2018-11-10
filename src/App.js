@@ -10,7 +10,7 @@ class App extends Component {
   constructor(props) {
     super(props);
 
-    if (!localStorage.getItem('myData')) {
+    if (!localStorage.getItem('applicationState')) {
       this.state = {
         "incomes": [
           {
@@ -53,17 +53,12 @@ class App extends Component {
         "feedback":"",
       };
     } else {
-      this.state = JSON.parse(localStorage.getItem('myData'));
+      this.state = JSON.parse(localStorage.getItem('applicationState'));
       }
     }
 
-  
-  getInitialState = () => {
-    return JSON.parse(localStorage.getItem('state') || '{}');
-  } 
-
   componentDidUpdate = (prevProps, prevState) => {
-    localStorage.setItem('myData', JSON.stringify(this.state));
+    localStorage.setItem('applicationState', JSON.stringify(this.state));
   }
 
   componentWillMount(){
